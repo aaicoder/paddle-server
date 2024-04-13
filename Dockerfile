@@ -46,9 +46,7 @@ RUN go env -w GO111MODULE=auto
 
 WORKDIR /app
 # Enable compile these
-#RUN COPY tools/dockerfiles/build_scripts /build_scripts
-#RUN bash /build_scripts/compile.sh
-#RUN rm -rf /build_scripts
+RUN bash tools/dockerfiles/build_scripts/compile.sh
 RUN pip3.10 install whl-compile/*.whl
 
 #RUN pip3 install \
