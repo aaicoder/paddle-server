@@ -16,7 +16,7 @@ set(GOPATH "${CMAKE_CURRENT_LIST_DIR}/../")
 file(MAKE_DIRECTORY ${GOPATH})
 
 function(ExternalGoProject_Add TARG)
-  add_custom_target(${TARG} env GOPATH=${GOPATH} ${CMAKE_Go_COMPILER} get ${ARGN})
+  add_custom_target(${TARG} env GOPATH=${GOPATH} ${CMAKE_Go_COMPILER} install ${ARGN})
 endfunction(ExternalGoProject_Add)
 
 function(add_go_executable NAME)

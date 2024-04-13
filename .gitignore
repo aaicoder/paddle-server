@@ -2,4 +2,5 @@ build
 .baidu*
 .bcloud*
 output
+whl-compile
 *~

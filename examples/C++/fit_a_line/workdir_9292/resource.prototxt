@@ -1,0 +1,4 @@
+model_toolkit_path: "workdir_9292"
+model_toolkit_file: "GeneralInferOp_0/model_toolkit.prototxt"
+general_model_path: "workdir_9292"
+general_model_file: "GeneralInferOp_0/general_model.prototxt"

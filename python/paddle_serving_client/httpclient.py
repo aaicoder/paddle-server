@@ -19,7 +19,7 @@ import os
 from .proto import general_model_config_pb2 as m_config
 import google.protobuf.text_format
 import gzip
-from collections import Iterable
+from collections.abc import Iterable
 import base64
 import sys
 import re

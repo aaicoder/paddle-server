@@ -66,7 +66,7 @@ def gen_pipeline_code(package_name):
     # pipeline grpc-gateway shared-lib
     ret = os.system("cd {}/pipeline/gateway/ && go mod init serving-gateway".
                     format(package_name))
-    ret = os.system("cd {}/pipeline/gateway/ && go mod vendor && go mod tidy".
+    ret = os.system("cd {}/pipeline/gateway/ && go mod tidy".
                     format(package_name))
     ret = os.system(
         "cd {}/pipeline/gateway && "
